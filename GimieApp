@@ -1,0 +1,19 @@
+public class Product {
+    private String name;
+    private String imageUrl;
+    private double price;
+    private String url;
+
+    public Product(String name, String imageUrl, double price, String url) {
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.price = price;
+        this.url = url;
+    }
+
+    // Getters e Setters
+    public String getName() { return name; }
+    public String getImageUrl() { return imageUrl; }
+    public double getPrice() { return price; }
+    public String getUrl() { return url; }
+}

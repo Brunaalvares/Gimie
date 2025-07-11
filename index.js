@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 10000;
 
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('API Gimie rodando! Acesse /links para ver os produtos.');
+});
+
 app.get('/links', (req, res) => {
   res.json([
     {
